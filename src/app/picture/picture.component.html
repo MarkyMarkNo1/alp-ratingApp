@@ -1,0 +1,18 @@
+<div>
+  <img [src]="picture.imageUrl" [alt]="picture.title">
+</div>
+<div>
+  <span class="picture-title">{{ picture.title }}</span>
+</div>
+<div>
+  Rating: {{ picture.rate }}
+</div>
+<div>
+  {{ picture.description }}
+</div>
+<div>
+  <span class="picture-author">{{ picture.authorName }}</span>
+</div>
+<div>
+  Comments: {{ picture.comments.length }}
+</div>
