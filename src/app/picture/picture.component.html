@@ -1,20 +1,10 @@
-<div class="picture-wrap">
-  <div>
-    <img [src]="picture.imageUrl" [alt]="picture.title">
+<div class="card mb-4">
+    <div class="card-img-top" ></div>
+    <div class="card-body">
+      <h3 class="card-title mb-3">{{ picture.title }}</h3>
+      <h4 class="card-subtitle mb-3 text-muted">{{ picture.authorName }}</h4>
+      <p class="card-text">{{ picture.description }}</p>
+      <p class="">Rating: {{ picture.rate }}</p>
+      <div>Comments: {{ picture.comments.length }}</div>
+    </div>
   </div>
-  <div>
-    <span class="picture-title">{{ picture.title }}</span>
-  </div>
-  <div>
-    Rating: {{ picture.rate }}
-  </div>
-  <div>
-    {{ picture.description }}
-  </div>
-  <div>
-    <span class="picture-author">{{ picture.authorName }}</span>
-  </div>
-  <div>
-    Comments: {{ picture.comments.length }}
-  </div>
-</div>
