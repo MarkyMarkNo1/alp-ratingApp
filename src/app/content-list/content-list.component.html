@@ -1,7 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div *ngFor="let picture of (pictures$ | async)" class="col-md-6 col-lg-4 col-xl-3">
-      <app-picture [picture]="picture" [routerLink]="['content', picture.id]"></app-picture>
+<!-- Search and add buttons -->
+
+<div class="search-wrapper">
+    <div class="search-child-wrapper">
+      <input type="text" placeholder="Search...">
+      <div class="search"></div>
+  
+  
     </div>
+    <div class='add-button' (click)='contentService.showEditor = !contentService.showEditor'>
+      <div class="add"></div>
+    </div>
+
+<!-- List -->
+
+<div class="container">
+
+    <div *ngFor="let picture of (pictures$ | async)">
+
+      <app-picture [picture]="picture" [routerLink]="['content', picture.id]"></app-picture>
+
   </div>
 </div>
