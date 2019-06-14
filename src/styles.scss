@@ -48,16 +48,12 @@
  // @import "~bootstrap/scss/print";
 
 
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
-  padding-top: 95px;  // header + a little spacing
-}
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #3FEEE6;
+  margin-top: 45px;
 }
 
 ::-webkit-scrollbar { 
