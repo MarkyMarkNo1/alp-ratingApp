@@ -9,7 +9,7 @@ export interface Picture {
   title?: string;
   imageUrl?: string;
   description?: string;
-  rate: number; // one to five stars?
+  rate?: number; // one to five stars?
   authorName?: string;
   comments?: Comment[];
 }

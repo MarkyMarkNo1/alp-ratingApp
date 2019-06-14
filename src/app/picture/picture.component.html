@@ -1,13 +1,13 @@
 
 
     <div class='boxes'>
-      
+
     <div class="image-container" [ngStyle]="{'background-image': 'url(' + picture.imageUrl + ')'}"></div>
     <div class="card-body">
       <h3 class="card-title mb-3">{{ picture.title }}</h3>
       <h4 class="card-subtitle mb-3 text-muted">{{ picture.authorName }}</h4>
       <p class="card-text">{{ picture.description }}</p>
       <p class="">Rating: {{ picture.rate }}</p>
-      <div>Comments: {{ picture.comments.length }}</div>
+      <div>Comments: {{ picture.comments?.length }}</div>
     </div>
   </div>

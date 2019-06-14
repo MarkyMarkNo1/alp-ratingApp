@@ -1,0 +1,14 @@
+<form #form="ngForm" novalidate (ngSubmit)="save(form.value)">
+  Link to image:
+  <input type="text" name="imageUrl" required #imageUrl="ngModel" ngModel minlength="3">
+  title:
+    <input type="text" name="title" #title="ngModel" ngModel>
+    description:
+    <div>
+      <textarea name="description" #description="ngModel" ngModel></textarea>
+    </div>
+    //author - should be added automatically with login
+    <input type="text" name="author" #author="ngModel" ngModel>
+    <button type="button">Cancel</button>
+    <button type="submit" [disabled]="!form.valid">Save</button>
+</form>

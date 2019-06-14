@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Picture } from '../models/picture';
+import { PicturesService } from '../pictures.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-content-create',
@@ -8,11 +10,20 @@ import { Picture } from '../models/picture';
 })
 export class ContentCreateComponent implements OnInit {
 
-  picture: Picture;
+  // picture: Picture;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private picturesService: PicturesService
+    ) { }
 
   ngOnInit() {
+  }
+
+  save(value: Picture) {
+    console.log(value);
+    this.picturesService.addPicture(value)
+    .subscribe(pic => this.router.navigate(['/content', pic.id]));
   }
 
 }
