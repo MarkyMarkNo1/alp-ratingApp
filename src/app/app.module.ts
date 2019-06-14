@@ -13,6 +13,7 @@ import { CreatorComponent } from './creator/creator.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { PictureComponent } from './picture/picture.component';
 import { PicturesService } from './pictures.service';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PicturesService } from './pictures.service';
     HeaderComponent,
     CreatorComponent,
     ContentListComponent,
-    PictureComponent
+    PictureComponent,
+    ContentDetailComponent
   ],
   imports: [
     BrowserModule,
