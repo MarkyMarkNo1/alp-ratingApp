@@ -10,13 +10,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './header/header.component';
 import { CreatorComponent } from './creator/creator.component';
+import { ContentListComponent } from './content-list/content-list.component';
+import { PictureComponent } from './picture/picture.component';
+import { PicturesService } from './pictures.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
     HeaderComponent,
-    CreatorComponent
+    CreatorComponent,
+    ContentListComponent,
+    PictureComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import { CreatorComponent } from './creator/creator.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [
+    PicturesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
