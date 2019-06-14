@@ -1,4 +1,18 @@
 <div id="detail-wrapper">
+    <h1>{{picture.title}}</h1>
+    <div id="image-wrapper">
+        <img [src]="picture.imageUrl" alt="">
+    </div>
 
+    <div id="description">
+        {{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}{{picture.description}}
+    </div>
 
+    <div id="comment-section">
+        <h4>Comment section:</h4>
+        <div id="comment-wrapper">
+            <div class="comment" *ngFor="let comment of picture.comments">
+                {{comment.comment}}
+            </div>
+    </div>
 </div>

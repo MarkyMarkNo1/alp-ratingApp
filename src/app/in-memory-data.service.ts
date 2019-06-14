@@ -16,11 +16,23 @@ export class InMemoryDataService implements InMemoryDbService {
         description: 'Picture 11 description goes here',
         rate: 3,
         authorName: 'Picture 11 author name goes here',
-        comments: [{
+        comments: [
+        {
           id: 1,
-          fromName: 'bob',
+          fromName: 'Bob',
           comment: 'a comment'
-        }]
+        },
+        {
+          id: 2,
+          fromName: 'Boby',
+          comment: 'another comment'
+        },
+        {
+          id: 3,
+          fromName: 'leBob',
+          comment: 'last comment'
+        },
+      ]
       },
       {
         id: 12,

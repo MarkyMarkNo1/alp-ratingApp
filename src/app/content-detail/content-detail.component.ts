@@ -14,14 +14,14 @@ export class ContentDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private picturesService: PicturesService) { }
 
-  picture$: Observable<Picture>;
+  picture: Picture;
 
   ngOnInit() {
-
+    
     let id = this.route.snapshot.params['id'];
     this.picturesService.getPicture(id).subscribe(picture => {
-      this.picture$ = picture;
-      console.log('object: ', this.picture$);
+      this.picture = picture;
+      console.log('object: ', this.picture);
     });
   }
 }
