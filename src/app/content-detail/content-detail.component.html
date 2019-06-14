@@ -9,8 +9,9 @@
     </div>
 
     <div id="comment-section">
-        <h4>Comment section:</h4>
-        <div id="comment-wrapper">
+        <h4 *ngIf="picture.comments.length > 0">Comment section:</h4>
+        <h4 *ngIf="picture.comments.length == 0">There are no comments</h4>
+        <div id="comment-wrapper"  *ngIf="picture.comments.length > 0">
             <div class="comment" *ngFor="let comment of picture.comments">
               <div class="user">{{comment.fromName}}: </div>
               {{ comment.comment }}

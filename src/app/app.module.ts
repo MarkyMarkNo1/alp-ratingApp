@@ -14,6 +14,7 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { PictureComponent } from './picture/picture.component';
 import { PicturesService } from './pictures.service';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { ContentCreateComponent } from './content-create/content-create.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContentDetailComponent } from './content-detail/content-detail.componen
     CreatorComponent,
     ContentListComponent,
     PictureComponent,
-    ContentDetailComponent
+    ContentDetailComponent,
+    ContentCreateComponent
   ],
   imports: [
     BrowserModule,
