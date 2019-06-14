@@ -1,7 +1,10 @@
+.card {
+  cursor: pointer;
+}
+
 .card-img-top {
-  padding-top: 67%;
-  // &:before {
-  //   display: block;
-  //   padding-top: 67%;
-  // }
+  padding-top: 67%; // 3:2 aspect ratio
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
