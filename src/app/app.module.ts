@@ -7,10 +7,16 @@ import { AppComponent } from './app.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './header/header.component';
+import { CreatorComponent } from './creator/creator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContentComponent,
+    HeaderComponent,
+    CreatorComponent
   ],
   imports: [
     BrowserModule,
