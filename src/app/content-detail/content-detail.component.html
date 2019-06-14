@@ -1,5 +1,5 @@
 <div id="detail-wrapper">
-    <h1>{{picture.title}}</h1>
+    <h2 id="title">{{picture.title}}</h2>
     <div id="image-wrapper">
         <img [src]="picture.imageUrl" alt="">
     </div>
@@ -11,8 +11,9 @@
     <div id="comment-section">
         <h4>Comment section:</h4>
         <div id="comment-wrapper">
-            <div class="comment" *ngFor="let comment of picture.comments">
-                {{comment.comment}}
-            </div>
+                <div class="comment" *ngFor="let comment of picture.comments">
+                    <div class="user">{{comment.fromName}}: </div>
+                    {{comment.comment}}
+                </div>
     </div>
 </div>
