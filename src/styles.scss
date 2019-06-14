@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -54,3 +55,11 @@ body{
   padding-top: 95px;  // header + a little spacing
 }
 
+body {
+  margin: 0;
+  background-color: #3FEEE6;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
