@@ -55,15 +55,25 @@ export class PicturesService {
 
   /* GET pictures whose name contains search term */
   searchPictures(term: string): Observable<Picture[]> {
-    if (!term.trim()) {
-      // if not search term, return empty picture array.
-      return of([]);
-    }
-    return this.http.get<Picture[]>(`${this.picturesUrl}/?name=${term}`).pipe(
+    // if (!term.trim()) {
+    //   // if not search term, return empty picture array.
+    //   return of([]);
+    // }
+    return this.http.get<Picture[]>(`${this.picturesUrl}/?title=${term}`).pipe(
+      map((data => data)),
       tap(_ => this.log(`found pictures matching "${term}"`)),
       catchError(this.handleError<Picture[]>('searchPictures', []))
     );
   }
+
+  /*
+  
+    searchPictures(term: string): Observable<Picture[]> {
+      console.log('you are actually trying to search for something that dosnt work at all');
+      return this.http.get<PicturesResponse>(this.picturesUrl).pipe(map((data) => data.items));
+    }
+  
+  */
 
   //////// Save methods //////////
 

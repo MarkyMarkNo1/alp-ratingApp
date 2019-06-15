@@ -1,0 +1,28 @@
+<div [@flyInOut] class = 'create-area'>
+
+  <form #form="ngForm" novalidate (ngSubmit)="save(form.value)">
+    <div class="text-input">
+    <input type="text" name="imageUrl" required [(ngModel)]="picture.imageUrl" minlength="3">
+    <label for="input1">Image URL</label>
+    </div>
+    <div class="text-input">
+      <input type="text" name="title" [(ngModel)]="picture.title" autocomplete="off">
+      <label for="input1">Title</label>
+    </div>  
+  
+    <div class="text-input">
+        <input class='desc' type="text" name="description" [(ngModel)]="picture.description" autocomplete="off">
+        <label for="input1">Description</label>
+      </div>
+  
+      <div class="text-input">
+      <input type="text" name="author" [(ngModel)]="picture.author" autocomplete="off">
+      <label for="input1">Author</label>
+    </div>
+  
+      <button type="button">Cancel</button>
+      <button type="submit" [disabled]="!form.valid" >Save</button>
+  </form>
+  
+  </div>
+  

@@ -1,23 +1,35 @@
 <!-- Search and add buttons -->
 
 <div class="search-wrapper">
-    <div class="search-child-wrapper">
-      <input type="text" placeholder="Search...">
-      <div class="search"></div>
+  <div class="search-child-wrapper">
+    <input type="text" placeholder="Search..." (input)="terms$.next($event.target.value)">
+    <div class="search"></div>
 
-
-    </div>
-    <div class='add-button' routerLink="create">
-      <div class="add"></div>
-    </div>
-
-<!-- List -->
-
-<div class="container">
-
-    <div *ngFor="let picture of (pictures$ | async)">
-
-      <app-picture [picture]="picture" [routerLink]="['content', picture.id]"></app-picture>
 
   </div>
+  <div class='add-button' (click)="toggleCreate()">
+    <div class="add" [ngClass]="{'closeCreate': isCreateWindowActive}"> </div>
+  </div>
 </div>
+
+
+  <!-- List -->
+
+  <div class="test">
+
+
+    <div class="container">
+
+
+      <div *ngFor="let picture of (pictures$ | async)">
+
+        <app-picture [picture]="picture" [routerLink]="['content', picture.id]"></app-picture>
+
+      </div>
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+
+  </div>

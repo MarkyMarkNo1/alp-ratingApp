@@ -3,9 +3,9 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    max-width: 1800px; 
+    max-width: 1600px;
     min-height: 100%;
-    top: 15px;
+    top: 20px;
 }
 
 
@@ -21,7 +21,7 @@
 // width: 300px;
 // height: 500px;
 
-// float: right;
+float: right;
     
 .search-child-wrapper {
     position: relative;
@@ -183,4 +183,21 @@
           }
 
 
+.add{
+  transition: .8s;
+  // background-color: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  letter-spacing: 80px;
+}
 
+.closeCreate{
+  transform: rotate(225deg);
+}
+
+.test { 
+  display: flex;
+  width: 100%;
+}
