@@ -1,6 +1,6 @@
 <div [@flyInOut] class = 'create-area'>
 
-  <form #form="ngForm" *ngIf="picture" novalidate (ngSubmit)="update(form.value)">
+  <form #form="ngForm" *ngIf="picture" novalidate (ngSubmit)="update(picture)">
     <div class="text-input">
     <input type="text" name="imageUrl" required [(ngModel)]="picture.imageUrl" minlength="3">
     <label for="input1">Image URL</label>
