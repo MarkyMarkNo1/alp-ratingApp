@@ -15,6 +15,8 @@ export class ContentDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private picturesService: PicturesService) { }
 
   picture$: Observable<Picture>;
+  ratingHoverValue: number = 0;
+  hasRated: boolean = false;
 
   ngOnInit() {
 
