@@ -21,7 +21,7 @@
 
       <div *ngFor="let picture of (pictures$ | async)">
 
-        <app-picture [picture]="picture" [routerLink]="['content', picture.id]"></app-picture>
+        <app-picture [picture]="picture" [routerLink]="['/content', picture.id]"></app-picture>
 
       </div>
     </div>
