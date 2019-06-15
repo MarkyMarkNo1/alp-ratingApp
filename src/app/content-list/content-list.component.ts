@@ -41,7 +41,7 @@ export class ContentListComponent implements OnInit {
 
 
   toggleCreate() {
-    if (this.route.url != '/create') {
+    if (this.route.url != '/create' && !this.route.url.includes('/edit')) {
 
       this.route.navigate(['/create']);
       this.isCreateWindowActive = true;

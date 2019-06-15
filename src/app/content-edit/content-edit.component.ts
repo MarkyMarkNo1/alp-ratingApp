@@ -40,8 +40,6 @@ export class ContentEditComponent implements OnInit {
       console.log(this.picture);
 
     });
-
-
   }
 
   update(value: Picture) {

@@ -21,6 +21,8 @@ $imageWidth: 300px;
         padding-right: 10px;
         padding-left: 10px;
         background-color: #55BCC9;
+        // border: 2px solid #cafafe;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     }
 }
@@ -59,6 +61,8 @@ $imageWidth: 300px;
     max-width: 600px;
     max-height: 100px;
     overflow: hidden;
+    // border: 1px solid #55BCC9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   
     // box-shadow: 0 1px 5px black;
     // border-radius: 0 10px 10px 0;
@@ -72,8 +76,9 @@ $imageWidth: 300px;
     background-color: #FC4445;
     height: auto;
     width: 80%;
-    left: 20%;
-    // max-width: 800px;
+    left: 50%;
+    max-width: 800px;
+    transform: translateX(-50%);
 
     // border-radius: 10px;
     padding-bottom: 25px;
@@ -99,14 +104,14 @@ $imageWidth: 300px;
 
             background-color: #cafafe;
             margin-bottom: 5px;
-            border-radius: 5px;
+            // border-radius: 5px;
             padding: 2px;
             padding-left: 4px;
 
             &>.user {
                 position: absolute;
                 left: -15%;
-                color: yellow;
+                color: #97CAEF;
                 width: 75px;
                 text-align: right;
             }
@@ -115,15 +120,56 @@ $imageWidth: 300px;
 }
 
 
+textarea{
+    position: relative;
+    left: 15%;
+    width: 75%;
+    height: 50px;
+    // opacity: .2;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+// #add-comment-btn{
+//     position: relative;
+//     padding: 5px;
+//     background-color: #97CAEF;
+//     display: inline-block;
+//     top: 100%;
+//     cursor: pointer;
+// }
+
+button {
+    position: relative;
+    margin: 20px 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: rgb(28, 184, 65);
+  }
+  
+  button[type='button'] {
+    background: rgb(202, 60, 60);
+  }
+  
+  
+  button[type='submit'] {
+    background: rgb(28, 184, 65);
+  }
+
 #rating {
     position: absolute;
     z-index: 9;
     width: 180px;
     height: 40px;
-    background-color: #97CAEF;
+    background-color: #cafafe;
     border-radius: 5px;
     top: calc(15% + 250px);
     left: calc(10% + 325px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     &>.star {
         position: relative;

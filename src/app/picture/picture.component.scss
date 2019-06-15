@@ -21,6 +21,7 @@
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s;
+  transform: scale(1.007);
   
 
   
@@ -82,3 +83,46 @@ img{
       transform: scale(.8);
   }
 }
+
+.edit-solid.icon {
+  color: white;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  bottom: 17px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  
+         
+}
+
+.edit-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+}
+.click-area {
+position: absolute;
+right: 5px;
+bottom: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: #FC4445;
+  border-radius: 50%;
+
+}
+

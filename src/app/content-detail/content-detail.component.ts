@@ -31,4 +31,12 @@ export class ContentDetailComponent implements OnInit {
     picture.rate = newRating;
     this.picturesService.updatePicture(picture).subscribe();
   }
+
+  addComment(picture: Picture, comment: string){
+    console.log(comment);
+    this.hasRated = true;
+    picture.comments.push({id: 0, fromName: 'you', comment: comment});
+    this.picturesService.updatePicture(picture).subscribe();
+    
+  }
 }

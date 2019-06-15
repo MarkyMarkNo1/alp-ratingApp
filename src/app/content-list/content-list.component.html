@@ -8,7 +8,7 @@
 
   </div>
   <div class='add-button' (click)="toggleCreate()">
-    <div class="add" [ngClass]="{'closeCreate': isCreateWindowActive}"> </div>
+    <div class="add" [ngClass]="{'closeCreate': isCreateWindowActive || route.url.includes('/edit')}"> </div>
   </div>
 </div>
 
@@ -25,9 +25,5 @@
 
       </div>
     </div>
-
-
     <router-outlet></router-outlet>
-
-
   </div>

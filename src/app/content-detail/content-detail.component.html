@@ -23,8 +23,10 @@
             <div class="comment" *ngFor="let comment of picture.comments">
               <div class="user">{{comment.fromName}}: </div>
               {{ comment.comment }}
-            </div>
-    </div>
+            </div>          
+      </div>
+    <textarea #textarearino id="comment-textarea" name="" id="" cols="30" rows="10"></textarea>
+    <button id="add-comment-btn" (click)="addComment(picture, textarearino.value);  textarearino.value = ''">Add comment</button>
 </div>
 
 <!-- <h1>{{ratingHoverValue}}</h1> -->

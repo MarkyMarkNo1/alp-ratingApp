@@ -18,7 +18,8 @@
       </div>
       <p>Comments: {{ picture.comments?.length }}</p>
       <div>
-        <a href="#" [routerLink]="['/edit', picture.id]" (click)="$event.stopPropagation()">Edit</a>
+        <a href="#" [routerLink]="['/edit', picture.id]" (click)="$event.stopPropagation()">
+          <div class='click-area'><div class="edit-solid icon"></div></div></a>
       </div>
     </div>
   </div>
