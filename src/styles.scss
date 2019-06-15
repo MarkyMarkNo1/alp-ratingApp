@@ -54,6 +54,23 @@ body {
   margin: 0;
   background-color: #3FEEE6;
   margin-top: 45px;
+ 
+
+}
+
+#background{
+  background-image: url(https://www.desktop-background.com/p/2012/10/27/474628_surfing-wallpapers-hd-download_3504x2336_h.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #3FEEE6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .25;
+
+
 }
 
 ::-webkit-scrollbar { 
