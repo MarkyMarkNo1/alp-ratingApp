@@ -41,8 +41,8 @@ input[type="text"], textarea[type="text"] {
     border-radius: 3px 0 0 3px;
     padding: 0 20px;
     background: #FC4445;
-    background: #FC4445;
-    opacity: 0.9;
+    background: crimson;
+    mix-blend-mode: darken;
     transform: translateZ(0) translateX(0);
     transition: all 0.3s ease-in;
     transition-delay: 0.2s;
@@ -72,3 +72,14 @@ h2 {
   padding: 5px 0 0 5px;
   color: white;
 }
+
+
+
+
+button {
+  margin: 20px 10px;
+}
+
+button[type="submit"] {
+  
+  }

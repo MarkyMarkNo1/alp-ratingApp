@@ -9,7 +9,7 @@ $imageWidth: 300px;
     height: 100%;
     // background-color: black;
 
-    &>#title{
+    &>#title {
         position: absolute;
         top: calc(15% + 10px);
         left: calc(10% + 300px);
@@ -37,7 +37,7 @@ $imageWidth: 300px;
     box-shadow: 0 2px 10px black;
     z-index: 2;
 
-    &>img{
+    &>img {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -60,7 +60,7 @@ $imageWidth: 300px;
 
 
 
-#comment-section{
+#comment-section {
     position: relative;
     top: calc((15% + 275px) + 50px);
     background-color: rgb(46, 46, 46);
@@ -69,9 +69,9 @@ $imageWidth: 300px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
-    padding-bottom: 25px;  
+    padding-bottom: 25px;
 
-    &>h4{
+    &>h4 {
         position: relative;
         top: 5px;
         left: 5px;
@@ -81,14 +81,14 @@ $imageWidth: 300px;
     }
 
 
-    &>#comment-wrapper{
+    &>#comment-wrapper {
         position: relative;
         top: 10px;
         left: 15%;
         width: 75%;
         color: white;
 
-        &>.comment{
+        &>.comment {
 
             background-color: rgb(61, 61, 61);
             margin-bottom: 5px;
@@ -96,7 +96,7 @@ $imageWidth: 300px;
             padding: 2px;
             padding-left: 4px;
 
-            &>.user{
+            &>.user {
                 position: absolute;
                 left: -15%;
                 color: yellow;
@@ -104,7 +104,33 @@ $imageWidth: 300px;
                 text-align: right;
             }
         }
-     
-        
+    }
+}
+
+
+#rating {
+    position: absolute;
+    z-index: 9;
+    width: 180px;
+    height: 40px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    top: calc(15% + 250px);
+    left: calc(10% + 325px);
+
+    &>.star {
+        position: relative;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        content: url(https://cdn2.iconfinder.com/data/icons/actions-states-vol-1-colored/48/JD-13-512.png);
+        // transition: .05s;
+
+    }
+
+    &>.gray-out {
+        filter: grayscale(100%);
+        top: 1px;
+        transform: scale(.8);
     }
 }
