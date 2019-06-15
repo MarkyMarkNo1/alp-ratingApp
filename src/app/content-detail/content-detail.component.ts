@@ -24,4 +24,11 @@ export class ContentDetailComponent implements OnInit {
       this.route.snapshot.params['id']
     );
   }
+
+
+  update(picture: Picture, newRating: number) {
+    this.hasRated = true;
+    picture.rate = newRating;
+    this.picturesService.updatePicture(picture).subscribe();
+  }
 }

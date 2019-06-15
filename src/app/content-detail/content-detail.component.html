@@ -9,11 +9,11 @@
     </div>
 
     <div id="rating" (mouseleave)="ratingHoverValue = hasRated ? ratingHoverValue : picture.rate">
-      <img class="star" (mouseenter)="ratingHoverValue = 1" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 1 || ratingHoverValue > 0 && ratingHoverValue < 1}">
-      <img class="star" (mouseenter)="ratingHoverValue = 2" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 2 || ratingHoverValue > 0 && ratingHoverValue < 2 }">
-      <img class="star" (mouseenter)="ratingHoverValue = 3" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 3 || ratingHoverValue > 0 && ratingHoverValue < 3 }">
-      <img class="star" (mouseenter)="ratingHoverValue = 4" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 4 || ratingHoverValue > 0 && ratingHoverValue < 4 }">
-      <img class="star" (mouseenter)="ratingHoverValue = 5" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 5 || ratingHoverValue > 0 && ratingHoverValue < 5 }">
+      <img class="star" (mouseenter)="ratingHoverValue = 1" (click)="update(picture, 1)" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 1 || ratingHoverValue > 0 && ratingHoverValue < 1}">
+      <img class="star" (mouseenter)="ratingHoverValue = 2" (click)="update(picture, 2)" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 2 || ratingHoverValue > 0 && ratingHoverValue < 2 }">
+      <img class="star" (mouseenter)="ratingHoverValue = 3" (click)="update(picture, 3)" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 3 || ratingHoverValue > 0 && ratingHoverValue < 3 }">
+      <img class="star" (mouseenter)="ratingHoverValue = 4" (click)="update(picture, 4)" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 4 || ratingHoverValue > 0 && ratingHoverValue < 4 }">
+      <img class="star" (mouseenter)="ratingHoverValue = 5" (click)="update(picture, 5)" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 5 || ratingHoverValue > 0 && ratingHoverValue < 5 }">
     </div>
 
     <div id="comment-section">
