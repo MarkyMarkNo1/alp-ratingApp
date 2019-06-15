@@ -8,6 +8,9 @@
       <h4 class="card-subtitle mb-3 text-muted">{{ picture.authorName }}</h4>
       <p class="card-text">{{ picture.description }}</p>
       <p class="">Rating: {{ picture.rate }}</p>
-      <div>Comments: {{ picture.comments?.length }}</div>
+      <p>Comments: {{ picture.comments?.length }}</p>
+      <div>
+        <a href="" [routerLink]="['/edit', picture.id]">Edit</a>
+      </div>
     </div>
   </div>
