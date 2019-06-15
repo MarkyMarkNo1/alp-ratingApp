@@ -53,3 +53,32 @@ img{
   height: auto;
 }
 
+
+#rating {
+  position: relative;
+  z-index: 9;
+  width: 180px;
+  height: 40px;
+  background-color: rgb(30, 30, 30, 0.05);
+  border-radius: 5px;
+  top: -10px;
+  // top: calc(15% + 250px);
+  // left: calc(10% + 325px);
+
+  &>.star {
+      position: relative;
+      height: 35px;
+      width: 35px;    
+      cursor: pointer;
+      content: url(https://cdn2.iconfinder.com/data/icons/actions-states-vol-1-colored/48/JD-13-512.png);
+      // transition: .05s;
+      filter: drop-shadow(0px 1px 1px black);
+
+  }
+
+  &>.gray-out {
+      filter: grayscale(100%);
+      top: 1px;
+      transform: scale(.8);
+  }
+}

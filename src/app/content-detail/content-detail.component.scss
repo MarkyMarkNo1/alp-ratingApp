@@ -32,7 +32,7 @@ $imageWidth: 300px;
     left: 10%;
     width: $imageWidth;
     height: $imageHeight;
-    border-radius: 10px;
+    // border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 10px black;
     z-index: 2;
@@ -121,7 +121,7 @@ $imageWidth: 300px;
     &>.star {
         position: relative;
         height: 35px;
-        width: 35px;
+        width: 35px;    
         cursor: pointer;
         content: url(https://cdn2.iconfinder.com/data/icons/actions-states-vol-1-colored/48/JD-13-512.png);
         // transition: .05s;
