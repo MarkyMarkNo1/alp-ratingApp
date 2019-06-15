@@ -1,6 +1,6 @@
 <div [@flyInOut] class = 'create-area'>
 
-  <form #form="ngForm" novalidate (ngSubmit)="save(form.value)">
+  <form #form="ngForm" novalidate (ngSubmit)="update(form.value)">
     <div class="text-input">
     <input type="text" name="imageUrl" required [(ngModel)]="picture.imageUrl" minlength="3">
     <label for="input1">Image URL</label>
@@ -21,7 +21,7 @@
     </div>
   
       <button type="button">Cancel</button>
-      <button type="submit" [disabled]="!form.valid" >Save</button>
+      <button type="submit" [disabled]="!form.valid" >Update</button>
   </form>
   
   </div>
