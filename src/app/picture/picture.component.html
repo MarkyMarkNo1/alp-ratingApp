@@ -7,10 +7,21 @@
       <h3 class="card-title mb-3">{{ picture.title }}</h3>
       <h4 class="card-subtitle mb-3 text-muted">{{ picture.authorName }}</h4>
       <p class="card-text">{{ picture.description }}</p>
-      <p class="">Rating: {{ picture.rate }}</p>
+      <div class="">   
+        <div id="rating">
+          <img class="star" [ngClass]="{'gray-out': picture.rate < 1}">
+          <img class="star" [ngClass]="{'gray-out': picture.rate < 2}">
+          <img class="star" [ngClass]="{'gray-out': picture.rate < 3}">
+          <img class="star" [ngClass]="{'gray-out': picture.rate < 4}">
+          <img class="star" [ngClass]="{'gray-out': picture.rate < 5}">
+        </div>
+      </div>
       <p>Comments: {{ picture.comments?.length }}</p>
       <div>
         <a href="#" [routerLink]="['/edit', picture.id]" (click)="$event.stopPropagation()">Edit</a>
       </div>
     </div>
   </div>
+
+
+    

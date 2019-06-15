@@ -14,7 +14,6 @@
       <img class="star" (mouseenter)="ratingHoverValue = 3" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 3 || ratingHoverValue > 0 && ratingHoverValue < 3 }">
       <img class="star" (mouseenter)="ratingHoverValue = 4" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 4 || ratingHoverValue > 0 && ratingHoverValue < 4 }">
       <img class="star" (mouseenter)="ratingHoverValue = 5" (click)="hasRated = true" [ngClass]="{'gray-out': ratingHoverValue == 0 && picture.rate < 5 || ratingHoverValue > 0 && ratingHoverValue < 5 }">
-
     </div>
 
     <div id="comment-section">
